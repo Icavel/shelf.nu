@@ -53,4 +53,8 @@ WORKDIR /src/apps/webapp
 
 RUN chmod +x /src/apps/webapp/start.sh
 
+
+EXPOSE 8080
+
 ENTRYPOINT [ "/src/apps/webapp/start.sh" ]
+

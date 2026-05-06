@@ -6,4 +6,8 @@
 # production Docker image does not include pnpm-workspace.yaml. Without it,
 # pnpm cannot resolve the workspace and the server fails to start.
 
+# Run database migrations
+npx prisma migrate deploy
+
 NODE_ENV=production node ./build/server/index.js
+
